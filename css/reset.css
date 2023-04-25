@@ -1,4 +1,22 @@
-/* reset.css */
-
-*{  margin:0; padding:0;}
-a{ text-decoration: none; color:black;}
+/* css초기화 */
+/* *{
+    margin:0;
+    padding:0
+} */
+a{
+    color:black;
+    text-decoration: none;
+    /* 밑줄제거 */
+}
+li{
+    list-style: none;
+    /* 목록기호없애기 */
+}
+table{
+    border-collapse: collapse;
+    /* 표테두리 단일실선 */
+}
+a:link {color: black;}
+a:visited {color: green;}
+a:hover {text-decoration: none;}
+a:active {color: gray;}

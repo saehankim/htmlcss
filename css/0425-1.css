@@ -1,0 +1,47 @@
+.borderimg{
+    border:10px solid transparent;
+    padding: 10px;
+    border-image: url(../imgs/테두리1.png) 30 round;
+    margin:30px;
+}
+.borderimg:hover{
+    border-image: url(../imgs/테두리1.png) 30 repeat;
+}
+.borderimg:active{
+    border-image: url(../imgs/테두리1.png) 30 space;
+}
+
+.borderimg2{
+    border:10px solid transparent;
+    padding:10px;
+    border-image: url(../imgs/테두리2.png) 30 stretch;
+    margin:30px;
+}
+.borderimg3{
+    border:50px solid transparent;
+    padding: 20px;
+    border-image: url(../imgs/테두리3.png) 21 repeat;
+    margin: 30px;
+}
+.borderimg4{
+    border:20px solid transparent;
+    padding: 10px;
+    border-image: url(../imgs/dog5.png) 21 repeat;
+    margin: 30px;
+    /* height: 150px; */
+}
+ul{margin: 30px;}
+ul>li{
+    list-style-type: decimal;
+    list-style-position: outside;
+    list-style-position: inside;
+    list-style-image: url('../imgs/icon1.gif');
+    /* list-style: none;
+    list-style: upper-alpha inside; */
+}
+ul>li:hover {
+    list-style-image: url('../imgs/icon2.gif');
+}
+ul>li:active{
+    list-style-image: url('../imgs/icon3.gif');
+}
