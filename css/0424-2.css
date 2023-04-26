@@ -13,7 +13,7 @@ background-color: gold;}
     position: apsolute;
     width: 100px;
     height: 100px;
-    clip: rect(0 10 50 0;
+    clip: rect(0 10 50 0);
     overflow: hidden;
     background-image: url('../imgs/cat1.png;')
 }
