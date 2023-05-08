@@ -1,0 +1,68 @@
+.container{
+    margin:50px;
+}
+.probar{
+    width:1000px;
+    height:30px;
+    border:1px solid;
+    border-radius:50px;
+    background-color:lightgray;
+}
+.probar .pro_bar{
+    border:1px;
+    width:100%;
+    height:30px;
+    border-radius:50px;
+}
+#one:checked~.probar>.pro_bar{
+    background-color:red;
+    width:5%;
+}
+#two:checked~.probar>.pro_bar{
+    background: linear-gradient(90deg, red 5%, rgba(0,38,84,0) 5%), linear-gradient(90deg, orange 25%, rgba(0,38,84,0) 25%);
+}
+#three:checked~.probar>.pro_bar{
+    background: linear-gradient(90deg, red 5%, rgba(0,38,84,0) 5%), linear-gradient(90deg, orange 25%, rgba(0,38,84,0) 25%),linear-gradient(90deg, yellow 50%, rgba(0,38,84,0) 50%);
+}
+#four:checked~.probar>.pro_bar{
+    background: linear-gradient(90deg, red 5%, rgba(0,38,84,0) 5%), linear-gradient(90deg, orange 25%, rgba(0,38,84,0) 25%),linear-gradient(90deg, yellow 50%, rgba(0,38,84,0) 50%), linear-gradient(90deg, green 75%, rgba(0,38,84,0) 75%);
+}
+#five:checked~.probar>.pro_bar{
+    background: linear-gradient(90deg, red 5%, rgba(0,38,84,0) 5%), linear-gradient(90deg, orange 25%, rgba(0,38,84,0) 25%),linear-gradient(90deg, yellow 50%, rgba(0,38,84,0) 50%), linear-gradient(90deg, green 75%, rgba(0,38,84,0) 75%), linear-gradient(90deg, blue 100%, rgba(0,38,84,0) 100%);
+    
+    width:100%;
+}
+
+
+
+
+
+/* 모달 창 구현하기 */
+#modal{
+    background: rgba(0, 0, 0, 0.3);
+    width:100%; 
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+}
+.modal-body{
+    width:350px;
+    height:350px;
+    border:0.1px solid rgba(0, 0, 0, 0.3);
+    position:absolute;
+    left:50%; top:50%;
+    transform:translate(-50%, -50%);
+}
+.btn{
+    display:block;
+    background:steelblue;
+    color:white !important;
+    padding:10px;
+    width:110px;
+    border-radius: 10px;
+}
+#modal img{width:100%;}
+#modal{display:none;}
+#modal:target{display:block;}
+.modal-body>a{color:white !important;}

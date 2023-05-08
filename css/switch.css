@@ -1,0 +1,58 @@
+.switch{
+    margin:50px;
+}
+.input-on-off{
+    display:none;
+}
+
+/* 스위치 디자인 */
+.label-on-off{
+    position:relative;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    display: block;
+    background: darkred;
+    color:white;
+    transition:1s;
+    font-weight:bold;
+    line-height:25px;
+    text-indent:5px;
+}
+
+/* 스위치 버튼-marble */
+.marble{
+    position:absolute;
+    left:2px;
+    top:3px;
+    display:block;
+    width:25px;
+    height:25px;
+    background:white;
+    border-radius:50%;
+    box-shadow:0 0 5px gray;
+    transition:0.5s;
+}
+/* on off 기능 구현하기 */
+.input-on-off:checked+.label-on-off>.marble{
+    left:31px;
+}
+/* .switch span{
+    font-size: 14px;
+    text-transform:capitalize;
+} */
+.input-on-off:checked+.label-on-off{
+    background:limegreen;
+}
+/* .input-on-off:checked+.label-on-off>.off{
+    display:none;
+}
+.switch{
+    overflow:hidden;
+}
+.input-on-off +.label-on-off>.on{
+    visibility: hidden;
+}
+.input-on-off:checked +.label-on-off>.on{
+    visibility: hidden;
+} */

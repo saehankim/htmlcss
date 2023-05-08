@@ -1,0 +1,27 @@
+#modal{
+    width:100%; 
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+}
+.modal-body{
+    border:0.1px solid white;
+    position:absolute;
+    left:50%; top:50%;
+    transform:translate(-50%, -50%);
+}
+.btn1{
+    margin-left:800px;
+    margin-top:350px;
+    width:240px;
+    height:300px;
+}
+
+#modal{display:none;}
+#modal:target{display:block;}
+#modal img{
+    width:800px;
+    height:1000px;
+}
+#modal a{color:blue !important;}

@@ -1,7 +1,8 @@
 /* css초기화 */
 *{
     margin:0;
-    padding:0
+    padding:0;
+    -webkit-text-size-adjust:none;
 }
 a{
     color:black;
@@ -14,9 +15,20 @@ li{
 }
 table{
     border-collapse: collapse;
+    border-spacing: 0;
     /* 표테두리 단일실선 */
 }
 a:link {color: black;}
 a:visited {color: green;}
 a:hover {text-decoration: none;}
 a:active {color: gray;}
+input, img{
+    vertical-align: baseline;
+}
+em, i, address{ font-style:normal;}
+
+textarea{resize:none;}
+
+img, fieldset{border:0;}
+
+label{cursor:pointer;}

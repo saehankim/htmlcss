@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/progress.css">
+</head>
+<body>
+    <h1> 모달창 만들기 </h1>
+    <a href="#modal" class="btn">모달창 보이기</a>
+    <hr>
+    <div id="modal">
+        <div class="modal-body">
+            <img src="./imgs/bo3.jpg">
+            <hr>
+            <a href="#">닫기</a>
+        </div>
+    </div>
+    <p>버튼이나 사진을 클릭했을 때 튀어나오는 화면 modal popup이라고 하며, 라이트박스 라고도 한다.
+    modal은 독점적인.. 다른 컨텐츠는 선택이 안되고, 팝업창이 화면 중앙에 위치하면 일반적으로 배경색은 반투명 고정.
+    </p>
+
+
+
+    <section class="container">
+<input name="pro" id="one" type="radio" checked />
+<label for="one" class="pro_label">5%</label>
+<input name="pro" id="two" type="radio"/>
+<label for="two" class="pro_label">25%</label>
+<input name="pro" id="three" type="radio"/>
+<label for="three" class="pro_label">50%</label>
+<input name="pro" id="four" type="radio"/>
+<label for="four" class="pro_label">75%</label>
+<input name="pro" id="five" type="radio"/>
+<label for="five" class="pro_label">100%</label>
+        <div class="probar">
+        <div class="pro_bar"></div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* 3단 스위치 */
+.switch2{
+    position:relative;
+    width:250px;
+    padding:0 30px;
+    font-family: verdana;
+    margin:30px;
+}
+.switch_label{
+    display:inline-block;
+    width:32px;
+    padding:16px;
+    text-align:center;
+    cursor:pointer;
+    transition: 0.2s ease-out;
+}
+
+.switch2_indicator{
+    width:65px;
+    height:65px;
+    position: absolute;
+    top: -2px;
+    left:0;
+    background:steelblue;
+    transition:0.6s;
+    transform:translate(16px, 0, 0);
+    border-radius:50%;
+}
+
+#one:checked ~.switch2_indicator{
+    background:skyblue;
+    transform:translate(30px);
+}
+#two:checked ~.switch2_indicator{
+    background:blue;
+    transform:translate(90px);
+}
+#three:checked ~.switch2_indicator{
+    background:darkblue;
+    transform:translate(170px);
+}
+.switch2 input{display:none;}
+.switch2{
+    background:black;
+    border-radius:30px;
+    color:white;
+    width:204px;
+}
+.switch2_label:hover{
+    color:lightgray;
+}
