@@ -1,0 +1,82 @@
+.mainMenu{
+    width: 250px;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.item{
+    border-top: 1px solid orangered;
+    overflow: hidden;
+}
+.btn{
+    display: block;
+    padding: 15px 20px;
+    background-color: orangered;
+    color: white;
+    position: relative;
+
+}
+.btn:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 15px;
+    bottom: -10px;
+    
+}
+.btn i {
+    margin-right: 10px;
+}
+.subMenu{
+    background: midnightblue;
+    overflow: hidden;
+    transition: 0.7s;
+    max-height: 0;
+}
+.subMenu a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    font-size: 14px;
+    border-bottom: 1px solid midnightblue;
+    position: relative;
+    
+}
+.subMenu a:before{
+    content: '';
+    opacity: 0;
+    transition: 0.3s;
+
+}
+.subMenu a:hover:before{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    left: 0;
+    top:0;
+    opacity: 1;
+}
+.subMenu a:after{
+    content: '';
+    opacity: 0;
+    transition: 0.3s;
+
+}
+.subMenu a:hover:after{
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 6px;
+    right: 0px;
+    top:0;
+    opacity: 1;
+}
+
+.subMenu a:last-child{
+    border:none;
+}
+.item:target .subMenu{
+    max-height: 200px;
+}
