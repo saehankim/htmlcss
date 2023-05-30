@@ -19,7 +19,7 @@ table{
     /* 표테두리 단일실선 */
 }
 a:link {color: black;}
-a:visited {color: green;}
+/* a:visited {color: green;} */
 a:hover {text-decoration: none;}
 a:active {color: gray;}
 input, img{
